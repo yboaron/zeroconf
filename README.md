@@ -15,13 +15,13 @@ Though it does not support all requirements yet, the aim is to provide a complie
 By now, it should be compatible to [Avahi](http://avahi.org/) (tested) and Apple's Bonjour (untested).
 Target environments: private LAN/Wifi, small or isolated networks.
 
-[![GoDoc](https://godoc.org/github.com/grandcat/zeroconf?status.svg)](https://godoc.org/github.com/grandcat/zeroconf)
-[![Go Report Card](https://goreportcard.com/badge/github.com/grandcat/zeroconf)](https://goreportcard.com/report/github.com/grandcat/zeroconf)
+[![GoDoc](https://godoc.org/github.com/celebdor/zeroconf?status.svg)](https://godoc.org/github.com/celebdor/zeroconf)
+[![Go Report Card](https://goreportcard.com/badge/github.com/celebdor/zeroconf)](https://goreportcard.com/report/github.com/celebdor/zeroconf)
 
 ## Install
 Nothing is as easy as that:
 ```bash
-$ go get -u github.com/grandcat/zeroconf
+$ go get -u github.com/celebdor/zeroconf
 ```
 This package requires **Go 1.7** (context in std lib) or later.
 
@@ -51,7 +51,7 @@ if err != nil {
 
 <-ctx.Done()
 ```
-See https://github.com/grandcat/zeroconf/blob/master/examples/resolv/client.go.
+See https://github.com/celebdor/zeroconf/blob/master/examples/resolv/client.go.
 
 ## Lookup a specific service instance
 
@@ -80,7 +80,7 @@ case <-time.After(time.Second * 120):
 
 log.Println("Shutting down.")
 ```
-See https://github.com/grandcat/zeroconf/blob/master/examples/register/server.go.
+See https://github.com/celebdor/zeroconf/blob/master/examples/register/server.go.
 
 ## Features and ToDo's
 This list gives a quick impression about the state of this library.
