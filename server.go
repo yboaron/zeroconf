@@ -215,6 +215,10 @@ func (s *Server) Shutdown() {
 	s.shutdown()
 }
 
+// Probe - Yossi
+func (s *Server) Probe() {
+	s.probe()
+}
 // SetText updates and announces the TXT records
 func (s *Server) SetText(text []string) {
 	s.service.Text = text
